@@ -51,6 +51,10 @@ export var KVGAnimator = (function () {
             return;
         }
 
+        if (this.animator) {
+            clearTimeout(this.animator);
+        }
+
         this.paths = svg.querySelectorAll('path');
 
         this.numbers = svg.querySelectorAll('text');
@@ -132,7 +136,7 @@ export var KVGAnimator = (function () {
      * @param  {path} path
      */
     KVGAnimator.prototype.doAnimation = function doAnimation(path) {
-            var animator = setTimeout(function () {
+            this.animator = setTimeout(function () {
                 this.doAnimation(path);
             }.bind(this, path), this.interval);
 
@@ -141,7 +145,7 @@ export var KVGAnimator = (function () {
             this.length--;
 
             if (this.length < 0) {
-                clearInterval(animator);
+                clearInterval(this.animator);
 
                 this.count += 1;
 
