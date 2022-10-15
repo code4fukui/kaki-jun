@@ -18,6 +18,9 @@ export class KakiJun extends HTMLElement {
       this.appendChild(svg)
       const ka = new KVGAnimator(500);
       ka.play(svg);
+      svg.onclick = () => {
+        ka.play(svg);
+      };
     }
   }
 }
