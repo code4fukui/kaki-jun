@@ -1,6 +1,4 @@
-'use strict';
-
-var KanjivgAnimate = (function () {
+export var KanjivgAnimate = (function () {
 
     function KanjivgAnimate(trigger, time) {
         time = typeof time !== 'undefined' ? time : 500;
@@ -35,7 +33,7 @@ var KanjivgAnimate = (function () {
     return KanjivgAnimate;
 })();
 
-var KVGAnimator = (function () {
+export var KVGAnimator = (function () {
 
     function KVGAnimator(time) {
         this.time = time;
@@ -159,5 +157,3 @@ var KVGAnimator = (function () {
 
     return KVGAnimator;
 })();
-
-module.exports = KanjivgAnimate;
