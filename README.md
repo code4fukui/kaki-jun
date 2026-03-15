@@ -1,6 +1,8 @@
 # kaki-jun
 
-Easy animation HTML custom tag "kaki-jun" for [KanjiVG](https://github.com/KanjiVG/kanjivg) SVG files forked [kanjivganimate](https://github.com/nihongodera/kanjivganimate).
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
+Easy animation HTML custom tag "kaki-jun" for [KanjiVG](https://github.com/KanjiVG/kanjivg) SVG files forked from [kanjivganimate](https://github.com/nihongodera/kanjivganimate).
 
 ## Usage
 
