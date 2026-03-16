@@ -2,9 +2,6 @@
 
 "kaki-jun"は、[KanjiVG](https://github.com/KanjiVG/kanjivg)のSVGファイルを使ったやさしいアニメーションのHTMLカスタムタグです。[kanjivganimate](https://github.com/nihongodera/kanjivganimate)から派生したものです。
 
-## デモ
-[デモサイト](https://code4fukui.github.io/kaki-jun/)で試すことができます。
-
 ## 機能
 - 漢字の筆順アニメーション
 - クリックすると再生
